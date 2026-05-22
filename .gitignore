@@ -1,0 +1,109 @@
+# ─── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv_weasy/
+env/
+.env
+.env.local
+.env.*.local
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Logs ─────────────────────────────────────────────────────
+*.log
+app.log
+audit.log
+logs/
+
+# ─── Base de datos local ──────────────────────────────────────
+*.db
+*.sqlite3
+
+# ─── Testing ──────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+test.db
+
+# ─── Certificados SRI (NUNCA subir) ───────────────────────────
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+backend/app/certificates/
+
+# ─── Node / Frontend ──────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+.npm/
+
+# ─── Docker ───────────────────────────────────────────────────
+# El .env.production SÍ se versiona (es plantilla, no secretos)
+# Solo excluir versiones locales
+.env.production.local
+
+# ─── IDE ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Railway ──────────────────────────────────────────────────
+railbackup.json
+.railway/
+
+# ─── Alembic ──────────────────────────────────────────────────
+# SÍ se versiona migrations/ completo
+
+# ─── Uploads temporales ───────────────────────────────────────
+uploads/
+tmp/
+# Secrets
+*.p12
+*.pfx
+*.key
+*.pem
+*.crt
+.env
+.env.local
+.env.*.local
+
+# Audit files
+*_codigo.txt
+*_codigo.md
+audit*.txt
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+*.pid
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temp files
+*.tmp
+*.temp
+.cache/
